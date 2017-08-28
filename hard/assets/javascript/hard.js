@@ -36,7 +36,25 @@
    $(function(){
 
 
+ // function so that when clicking on feed template it turns red and then back to black when clicked again
+    $('h1').click(function(){
+
+      if ($('h1').css("color") == "rgb(255, 0, 0)") {
+        $('h1').css({color: "black"})
+      } else {
+        $('h1').css({color: "red"})
+      }
+    });
+
+
+ // code so that odd-numbered linked are hidden
+    $('.large-3.columns h5:odd a').hide();
+
+
+
+
+
 
    })
 
- })();
+ })()
